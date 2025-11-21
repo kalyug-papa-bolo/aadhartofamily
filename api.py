@@ -88,6 +88,6 @@ def fetch():
     except Exception as e:
         return jsonify({"error": f"Unexpected error: {str(e)}"}), 500
 
-# --- Run Server ---
+# --- Local run only (Vercel pe ignore ho jayega) ---
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
